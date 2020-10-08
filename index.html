@@ -9,106 +9,132 @@
 </head>
 
 <body>
-    <!-- picture of my face -->
-    <div class="jed-picture">
-        <img src="jed-resized.png" alt="Picture of Jed Hsu"/>
-    </div>
+    <!-- header to include who I am and where I am located -->
+    <header>
+        <div class="group">
+        <!-- picture of my face -->
+            <div class="item jed-picture">
+                <img src="jed-resized.png" alt="Picture of Jed Hsu"/>
+            </div>
+            <div class="item header-info">
+                <h1>Jed Hsu</h1>
+                <h2>Full-Stack Software Developer</h2>
+                <p>Located in Fremont, CA</p>
+                <nav>
+                  <ul class="navbar" id="navbar">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-    <div class="info-container">
-        <!-- header to include who I am and where I am located -->
-        <header>
-            <h1>Jed Hsu</h1>
-            <h2>Full-Stack Software Developer</h2>
-            <p>Located in Fremont, CA</p>
-        </header>
-
-        <main>
-            <!-- about me -->
-            <article class="container about">
-                <hr>
-                <h3>About Me</h3>
-                <p>I love creating web development projects ranging from front-end web designs to web scrapers. I am excited to solve problems in software. As a Development Engineering Manager in the hardware industry and a private tutor for over 10 years, I greatly enjoy working with and mentoring others.</p>
-                <p>Software services I offer:</p>
-                    <ul>
-                        <li>UI/UX Design</li>
-                        <li>Database Management and Analysis</li>
-                        <li>Web Scraping</li>
-                    </ul>
-                <p>Outside of web development, my hobbies include:</p>
-                    <ul>
-                        <li>Kayaking</li>
-                        <li>Exploring</li>
-                        <li>Bowling</li>
-                        <li>Walking my dog</li>
-                        <li>Learning about current technologies</li>
-                    </ul>
-                <hr>
-            </article>
-            <section class="projects">
-                <div class="group">
-                    <div class="project">
-                        <p>Project 1</p>
-                        <p>I am a placeholder.</p>
-                        <p>HTML/CSS</p>
-                        <p>I will be an image!</p>
-                        <p><a href="#">I am a link to Github repo</a></p>
-                        <p><a href="#">I am a link to the project</a></p>
-                    </div>
-                    <div class="project">
-                        <p>Project 2</p>
-                        <p>I am a placeholder.</p>
-                        <p>HTML/CSS</p>
-                        <p>I will be an image!</p>
-                        <p><a href="#">I am a link to Github repo</a></p>
-                        <p><a href="#">I am a link to the project</a></p>
-                    </div>
-                    <div class="project">
-                        <p>Project 3</p>
-                        <p>I am a placeholder.</p>
-                        <p>HTML/CSS</p>
-                        <p>I will be an image!</p>
-                        <p><a href="#">I am a link to Github repo</a></p>
-                        <p><a href="#">I am a link to the project</a></p>
-                    </div>
-                    <div class="project">
-                        <p>Project 4</p>
-                        <p>I am a placeholder.</p>
-                        <p>HTML/CSS</p>
-                        <p>I will be an image!</p>
-                        <p><a href="#">I am a link to Github repo</a></p>
-                        <p><a href="#">I am a link to the project</a></p>
-                    </div>
-                    <div class="project">
-                        <p>Project 5</p>
-                        <p>I am a placeholder.</p>
-                        <p>HTML/CSS</p>
-                        <p>I will be an image!</p>
-                        <p><a href="#">I am a link to Github repo</a></p>
-                        <p><a href="#">I am a link to the project</a></p>
-                    </div>
-                    <div class="project">
-                        <p>Project 6</p>
-                        <p>I am a placeholder.</p>
-                        <p>HTML/CSS</p>
-                        <p>I will be an image!</p>
-                        <p><a href="#">I am a link to Github repo</a></p>
-                        <p><a href="#">I am a link to the project</a></p>
-                    </div>
+    <main>
+        <!-- about me -->
+        <article class="container about" id="about">
+            <h2>About Me</h2>
+            <p>I love creating web development projects ranging from front-end web designs to web scrapers. I am excited to solve problems in software. As a Development Engineering Manager in the hardware industry and a private tutor for over 10 years, I greatly enjoy working with and mentoring others.</p>
+            <p>I have an MBA and MS in Engineering.</p>
+            <p>Software services I offer:</p>
+                <ul>
+                    <li>UI/UX Design</li>
+                    <li>Database Management and Analysis</li>
+                    <li>Web Scraping</li>
+                </ul>
+            <p>Technology stack:</p>
+                <ul>
+                    <li>Javascript, React, Redux</li>
+                    <li>Python, Django, Flask</li>
+                    <li>HTML, CSS</li>
+                    <li>Postgres</li>
+                </ul>
+            <p>Outside of web development, I have a plethora of hobbies. Here are some:</p>
+                <ul>
+                    <li>Finding the best places to eat</li>
+                    <li>Kayaking</li>
+                    <li>Exploring</li>
+                    <li>Bowling</li>
+                    <li>Walking my dog</li>
+                    <li>Learning about current technologies</li>
+                </ul>
+            <hr>
+        </article>
+        <article class="projects" id="projects">
+            <h2>Projects</h2>
+            <div class="group">
+                <div class="project">
+                    <p>Project 1</p>
+                    <p>I am a placeholder.</p>
+                    <p>HTML/CSS</p>
+                    <p>I will be an image!</p>
+                    <p><a href="#">I am a link to a Github repo</a></p>
+                    <p><a href="#">I am a link to the project</a></p>
                 </div>
-                <hr>
-            </section>
-        </main>
+                <div class="project">
+                    <p>Project 2</p>
+                    <p>I am a placeholder.</p>
+                    <p>HTML/CSS</p>
+                    <p>I will be an image!</p>
+                    <p><a href="#">I am a link to a Github repo</a></p>
+                    <p><a href="#">I am a link to the project</a></p>
+                </div>
+                <div class="project">
+                    <p>Project 3</p>
+                    <p>I am a placeholder.</p>
+                    <p>HTML/CSS</p>
+                    <p>I will be an image!</p>
+                    <p><a href="#">I am a link to a Github repo</a></p>
+                    <p><a href="#">I am a link to the project</a></p>
+                </div>
+                <div class="project">
+                    <p>Project 4</p>
+                    <p>I am a placeholder.</p>
+                    <p>HTML/CSS</p>
+                    <p>I will be an image!</p>
+                    <p><a href="#">I am a link to a Github repo</a></p>
+                    <p><a href="#">I am a link to the project</a></p>
+                </div>
+                <div class="project">
+                    <p>Project 5</p>
+                    <p>I am a placeholder.</p>
+                    <p>HTML/CSS</p>
+                    <p>I will be an image!</p>
+                    <p><a href="#">I am a link to a Github repo</a></p>
+                    <p><a href="#">I am a link to the project</a></p>
+                </div>
+                <div class="project">
+                    <p>Project 6</p>
+                    <p>I am a placeholder.</p>
+                    <p>HTML/CSS</p>
+                    <p>I will be an image!</p>
+                    <p><a href="#">I am a link to a Github repo</a></p>
+                    <p><a href="#">I am a link to the project</a></p>
+                </div>
+            </div>
+            <hr>
+        </article>
+    </main>
 
-        <footer>
-            <!-- contact me -->
-            <h3>Contact</h3>
-            <ol class="contact-links">
-                <li><a href="https://www.linkedin.com/in/jed-hsu/">LinkedIn</a></li>
-                <li><a href="https://github.com/jedh1/">Github</a></li>
-                <li><a href="mailto:jedhsu11@gmail.com">Email</li>
-            </ol>
-        </footer>
-    </div>
+    <footer>
+        <!-- contact me -->
+        <h2>Contact</h2>
+        <ol class="contact-links" id="contact">
+            <li><a href="https://www.linkedin.com/in/jed-hsu/">LinkedIn</a></li>
+            <li><a href="https://github.com/jedh1/">Github</a></li>
+            <li><a href="mailto:jedhsu11@gmail.com">Email</a></li>
+            <li>Send me a message using the form below!</li>
+        </ol>
+        <div class="form-container">
+            <form action="https://formspree.io/f/xaylqadq" method="POST">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="comment" name="comment" placeholder="What would you like to tell me?" required></textarea>
+                <button type="submit">Send!</button>
+            </form>
+        </div>
+    </footer>
 
 <!-- Include Javascript. There is actually no Javascript yet. I Like Javascript, so I will use this in the future. -->
 <script src="script.js"></script>
