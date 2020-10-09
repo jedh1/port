@@ -23,16 +23,27 @@ header {
     text-align: center;
     width: 100%;
     margin: 0;
-    padding: 15px 0 15px 0;
+    padding: 25px 0 25px 0;
     background-color: var(--bg-blue);
+}
+
+.header-group {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    width: 350px;
+    margin: 0 auto;
+}
+
+@media all and (min-width: 650px) {
+    .header-group {
+        flex-direction: row;
+        width: 650px;
+    }
 }
 
 .jed-picture {
-    width: 300px;
-    margin: 0px auto;
+    width: 260px;
+    margin: 10px auto;
     /* make my picture round.*/
     border-radius: 50%;
     overflow: hidden;
@@ -45,7 +56,7 @@ header {
 
 .header-info {
     margin: auto;
-    padding: 0;
+    padding: 0 20px;
 }
 
 header h2 {
@@ -90,6 +101,12 @@ main {
 
 }
 
+@media all and (min-width: 650px) {
+    main {
+        width: 650px;
+    }
+}
+
 hr {
     padding: 0;
     margin: 0;
@@ -126,6 +143,16 @@ footer {
     flex-direction: column;
     width: 350px;
     margin: 0 auto;
+}
+
+@media all and (min-width: 650px) {
+    footer, .group {
+        width: 650px;
+    }
+    .group {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 .project {
@@ -183,17 +210,4 @@ button[type=submit] {
 
 button[type=submit]:hover {
     background-color: darkgrey;
-}
-
-@media all and (min-width: 650px) {
-    header {
-        flex-direction: row;
-    }
-    main, footer, .group {
-        width: 650px;
-    }
-    .group {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
 }
